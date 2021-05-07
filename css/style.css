@@ -13,10 +13,14 @@ Dark green: #28b485
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: 'Lato',sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
     padding: 30px;
@@ -25,6 +29,7 @@ body {
 /***** Header Section *****/
 
 .header {
+    position: relative;
     height: 95vh;
     background-image: linear-gradient(
                         to right bottom,
@@ -34,4 +39,14 @@ body {
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+}
+
+.logobox{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.logo {
+    height: 3.5rem;
 }
