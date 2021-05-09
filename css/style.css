@@ -88,6 +88,7 @@ body {
     padding: 1.5% 4%;
     border-radius: 50px;
     transition: all 0.2s;
+    position: relative;
 }
 
 .btn-white {
@@ -106,8 +107,21 @@ body {
 }
 
 .btn::after {
-    background-color: #fff;
+    content: "";
     display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.btn-white::after
+{
+    background-color: #fff;
 }
 
 @keyframes moveRight {
