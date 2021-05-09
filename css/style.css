@@ -61,7 +61,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .heading-primary .main {
@@ -97,10 +97,17 @@ body {
 
 .btn:hover {
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.2);
 }
 
 .btn:active {
     transform: translateY(-1px);
+    box-shadow: 0 7px 10px rgba(0, 0, 0,0.1);
+}
+
+.btn::after {
+    background-color: #fff;
+    display: inline-block;
 }
 
 @keyframes moveRight {
