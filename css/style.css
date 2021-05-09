@@ -87,6 +87,7 @@ body {
     display: inline-block;
     padding: 1.5% 4%;
     border-radius: 50px;
+    transition: all 0.2s;
 }
 
 .btn-white {
@@ -95,11 +96,11 @@ body {
 }
 
 .btn:hover {
-
+    transform: translateY(-3px);
 }
 
 .btn:active {
-
+    transform: translateY(-1px);
 }
 
 @keyframes moveRight {
