@@ -128,9 +128,13 @@ body {
     background-color: #fff;
 }
 
+.hero-text .btn{
+    animation: moveUp 1s ease-out;
+} 
+
 @keyframes moveUp {
     0% {
-        transform: translateY(-8%);
+        transform: translateY(25%);
         opacity: 0;
     }
 
