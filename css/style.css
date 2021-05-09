@@ -129,12 +129,13 @@ body {
 }
 
 .hero-text .btn{
-    animation: moveUp 1s ease-out;
+    animation: moveUp 1s ease-out 0.75s;
+    animation-fill-mode: backwards;
 } 
 
 @keyframes moveUp {
     0% {
-        transform: translateY(25%);
+        transform: translateY(30%);
         opacity: 0;
     }
 
