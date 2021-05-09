@@ -78,6 +78,19 @@ body {
     animation: moveLeft 1s ease-out;
 }
 
+.btn:link,
+.btn:visited {
+    
+}
+
+.btn:hover {
+
+}
+
+.btn:active {
+
+}
+
 @keyframes moveRight {
     0%{
         opacity: 0;
