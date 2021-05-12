@@ -1,0 +1,19 @@
+{
+  "name": "natours-csstutorialproject1",
+  "version": "1.0.0",
+  "description": "Dummy site for natours - css tutorial project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnshumanMahato/Natours-cssTutorialProject1.git"
+  },
+  "author": "Anshuman Mahato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnshumanMahato/Natours-cssTutorialProject1/issues"
+  },
+  "homepage": "https://github.com/AnshumanMahato/Natours-cssTutorialProject1#readme"
+}
