@@ -9,10 +9,20 @@ $text-light: #fff;
 
 //css
 
-* {
+%global-reset {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+* {
+    @extend %global-reset;
+    &::after{
+        @extend %global-reset;
+    }
+    &::before{
+        @extend %global-reset;
+    }
 }
 
 html {
