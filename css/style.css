@@ -28,17 +28,14 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-
 .header__logobox {
   position: absolute;
   top: 3.6rem;
   left: 3.6rem;
 }
-
 .header__logo {
   height: 3.2rem;
 }
-
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -53,7 +50,6 @@ body {
   backface-visibility: hidden;
   margin-bottom: 5rem;
 }
-
 .heading-primary--main {
   display: block;
   font-size: 5.5rem;
@@ -61,7 +57,6 @@ body {
   letter-spacing: 3.2rem;
   animation: moveRight 1s ease-out;
 }
-
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -70,8 +65,7 @@ body {
   animation: moveLeft 1s ease-out;
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -80,22 +74,25 @@ body {
   transition: all 0.2s;
   position: relative;
 }
-
 .btn--white {
   background-color: #fff;
   color: #777;
 }
-
+.btn--white::after {
+  background-color: #fff;
+}
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
 }
-
 .btn::after {
   content: "";
   display: inline-block;
@@ -108,16 +105,6 @@ body {
   border-radius: 50px;
   transition: all 0.4s;
 }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--white::after {
-  background-color: #fff;
-}
-
 .btn--animated {
   animation: moveUp 1s ease-out 0.75s;
   animation-fill-mode: backwards;
