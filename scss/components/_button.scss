@@ -12,12 +12,12 @@
     }
 
     &--white {
-        background-color: $text-light;
-        color: $text-dark;
+        background-color: $white;
+        color: $grey-dark;
 
         &::after
     {
-        background-color: $text-light;
+        background-color: $white;
     }
     }
     
