@@ -70,12 +70,12 @@
     &:hover {
         background-color: $color-primary;
         color: $white;
-        transform: translateY(-3px);
+        transform: translateY(-2px);
         box-shadow: 0 10px 20px rgba($shadow-black,0.2);
     }
 
     &:active {
-        transform: translateY(-1px);
+        transform: translateY(0);
         box-shadow: 0 7px 10px rgba($shadow-black,0.1);
     }
     
