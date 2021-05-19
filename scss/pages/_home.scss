@@ -12,4 +12,10 @@
                         rgba($dark-green,0.8)),
                     url('../img/nat-4.jpg');
     background-size: cover;
+    transform: skewY(-5.5deg);
+    margin-top: -6.5rem;
+
+    & > * {
+        transform: skewY(5.5deg);
+    }
 }
