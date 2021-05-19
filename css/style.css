@@ -242,6 +242,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
