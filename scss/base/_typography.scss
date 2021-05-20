@@ -1,5 +1,5 @@
 .heading-primary {
-    color: $white;
+    color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 5rem;
@@ -26,7 +26,7 @@ body {
     font-weight: 400;
     font-size: $default-font-size;
     line-height: 1.7;
-    color: $grey-dark;
+    color: $color-grey-dark;
 }
 
 .heading-secondary {
@@ -34,7 +34,7 @@ body {
     display: inline-block;
     font-size: 2.7rem;
     font-weight: 700;
-    background-image: linear-gradient(to right,$light-green,$dark-green);
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 0.2rem;
@@ -42,7 +42,7 @@ body {
 
     &:hover {
         transform: skew(15deg,2deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($shadow-black, 0.2);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
     }
 }
 
