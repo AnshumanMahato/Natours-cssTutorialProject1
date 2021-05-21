@@ -80,7 +80,7 @@
         }
     }
 
-    //STYLE
+    //STYLE--CARD-1
     
     &--1 &__picture {
         background-image: linear-gradient(to right bottom,
@@ -99,6 +99,8 @@
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     }
 
+    //STYLE--CARD-2
+
     &--2 &__picture {
         background-image: linear-gradient(to right bottom,
                             rgba($color-primary-light,0.85),
@@ -115,6 +117,8 @@
     &--2 &__side--back{
         background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
     }
+
+    //STYLE--CARD-3
 
     &--3 &__picture {
         background-image: linear-gradient(to right bottom,
