@@ -34,17 +34,13 @@
         transform: rotateY(0);
     }
 
-    //FRONT 
+    //FRONT LAYOUT
     &__picture{
 
         height: 45%;
         background-size: cover;
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        background-image: linear-gradient(to right bottom,
-                            rgba($color-secondary-light,0.85),
-                            rgba($color-secondary-dark,0.85)),
-                        url(../img/nat-5.jpg);
     }
 
     &__heading {
@@ -60,9 +56,6 @@
     }
 
     &__heading-span {
-        background-image: linear-gradient(to right bottom,
-        rgba($color-secondary-light,0.85),
-        rgba($color-secondary-dark,0.85));
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
@@ -87,15 +80,56 @@
         }
     }
 
+    //STYLE
+    
+    &--1 &__picture {
+        background-image: linear-gradient(to right bottom,
+                            rgba($color-secondary-light,0.85),
+                            rgba($color-secondary-dark,0.85)),
+                        url(../img/nat-5.jpg);
+    }
+
+    &--1 &__heading-span {
+        background-image: linear-gradient(to right bottom,
+        rgba($color-secondary-light,0.85),
+        rgba($color-secondary-dark,0.85));
+    }
+
     &--1 &__side--back{
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     }
 
+    &--2 &__picture {
+        background-image: linear-gradient(to right bottom,
+                            rgba($color-secondary-light,0.85),
+                            rgba($color-secondary-dark,0.85)),
+                        url(../img/nat-5.jpg);
+    }
+
+    &--2 &__heading-span {
+        background-image: linear-gradient(to right bottom,
+        rgba($color-secondary-light,0.85),
+        rgba($color-secondary-dark,0.85));
+    }
+
     &--2 &__side--back{
-        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+    }
+
+    &--3 &__picture {
+        background-image: linear-gradient(to right bottom,
+                            rgba($color-secondary-light,0.85),
+                            rgba($color-secondary-dark,0.85)),
+                        url(../img/nat-5.jpg);
+    }
+
+    &--3 &__heading-span {
+        background-image: linear-gradient(to right bottom,
+        rgba($color-secondary-light,0.85),
+        rgba($color-secondary-dark,0.85));
     }
 
     &--3 &__side--back{
-        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     }
 }
