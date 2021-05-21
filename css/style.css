@@ -243,6 +243,22 @@ body {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.card__details {
+  padding: 2rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
 .card--1 .card__side--back {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }

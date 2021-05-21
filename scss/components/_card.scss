@@ -68,6 +68,25 @@
         box-decoration-break: clone;
     }
 
+    &__details {
+        padding: 2rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+
     &--1 &__side--back{
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     }
