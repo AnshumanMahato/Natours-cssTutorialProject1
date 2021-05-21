@@ -112,6 +112,10 @@ body {
   text-align: center;
 }
 
+.u-marginB-XL {
+  margin-bottom: 8rem;
+}
+
 .u-marginB-L {
   margin-bottom: 8rem;
 }
@@ -124,11 +128,27 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-marginT-XL {
+  margin-top: 10rem;
+}
+
+.u-marginT-L {
+  margin-top: 8rem;
+}
+
+.u-marginT-M {
+  margin-top: 4rem;
+}
+
+.u-marginT-S {
+  margin-top: 1.5rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  padding: 1.5% 4%;
+  padding: 1.5rem 4rem;
   border-radius: 50px;
   transition: all 0.2s;
   position: relative;
@@ -139,6 +159,13 @@ body {
 }
 .btn--white::after {
   background-color: #fff;
+}
+.btn--green {
+  background-color: #55c57a;
+  color: #fff;
+}
+.btn--green::after {
+  background-color: #55c57a;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -175,7 +202,7 @@ body {
   display: inline-block;
   border-bottom: 1px solid #55c57a;
   color: #55c57a;
-  padding: 0.5% 1%;
+  padding: 3px;
   transition: all 0.2s;
 }
 .btn-text:hover {
@@ -256,6 +283,26 @@ body {
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+}
+.card__price-only {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 .card--1 .card__picture {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url(../img/nat-5.jpg);
@@ -420,7 +467,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 20rem 0;
+  padding: 20rem 0 15rem;
   margin-top: -6.5rem;
 }
 
