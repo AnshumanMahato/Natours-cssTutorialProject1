@@ -196,8 +196,6 @@ body {
   -moz-perspective: 150rem;
 }
 .card__side {
-  color: #fff;
-  font-size: 2rem;
   height: 50rem;
   position: absolute;
   width: 100%;
@@ -215,10 +213,17 @@ body {
   transform: rotateY(180deg);
 }
 .card:hover .card__side--front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0);
+}
+.card__picture {
+  height: 45%;
+  background-size: cover;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url(../img/nat-5.jpg);
 }
 .card--1 .card__side--back {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);

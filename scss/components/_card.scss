@@ -1,13 +1,11 @@
 .card {
+    //FUNCTIONALITY
     position: relative;
     height: 50rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
     
     &__side {
-        color: #fff;
-        font-size: 2rem;
-
         height: 50rem;
         position: absolute;
         width: 100%;
@@ -28,11 +26,24 @@
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+    //FRONT 
+    &__picture{
+
+        height: 45%;
+        background-size: cover;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        background-image: linear-gradient(to right bottom,
+                            rgba($color-secondary-light,0.85),
+                            rgba($color-secondary-dark,0.85)),
+                        url(../img/nat-5.jpg);
     }
 
     &--1 &__side--back{
