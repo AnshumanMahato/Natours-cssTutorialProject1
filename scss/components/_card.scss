@@ -101,35 +101,35 @@
 
     &--2 &__picture {
         background-image: linear-gradient(to right bottom,
-                            rgba($color-secondary-light,0.85),
-                            rgba($color-secondary-dark,0.85)),
-                        url(../img/nat-5.jpg);
+                            rgba($color-primary-light,0.85),
+                            rgba($color-primary-dark,0.85)),
+                        url(../img/nat-6.jpg);
     }
 
     &--2 &__heading-span {
         background-image: linear-gradient(to right bottom,
-        rgba($color-secondary-light,0.85),
-        rgba($color-secondary-dark,0.85));
+        rgba($color-primary-light,0.85),
+        rgba($color-primary-dark,0.85));
     }
 
     &--2 &__side--back{
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
     }
 
     &--3 &__picture {
         background-image: linear-gradient(to right bottom,
-                            rgba($color-secondary-light,0.85),
-                            rgba($color-secondary-dark,0.85)),
-                        url(../img/nat-5.jpg);
+                            rgba($color-tertiary-light,0.85),
+                            rgba($color-tertiary-dark,0.85)),
+                        url(../img/nat-7.jpg);
     }
 
     &--3 &__heading-span {
         background-image: linear-gradient(to right bottom,
-        rgba($color-secondary-light,0.85),
-        rgba($color-secondary-dark,0.85));
+        rgba($color-tertiary-light,0.85),
+        rgba($color-tertiary-dark,0.85));
     }
 
     &--3 &__side--back{
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
     }
 }

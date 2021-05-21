@@ -267,22 +267,22 @@ body {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 .card--2 .card__picture {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)), url(../img/nat-6.jpg);
 }
 .card--2 .card__heading-span {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
 }
 .card--2 .card__side--back {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 .card--3 .card__picture {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)), url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)), url(../img/nat-7.jpg);
 }
 .card--3 .card__heading-span {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
 }
 .card--3 .card__side--back {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .composition {
