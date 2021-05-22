@@ -386,6 +386,16 @@ body {
   color: transparent;
 }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 3px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
