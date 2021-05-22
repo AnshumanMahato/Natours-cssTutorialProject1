@@ -6,4 +6,26 @@
     border-radius: 3px;
     box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
     font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    & > * {
+        transform: skewX(12deg);
+    }
+
+    &__figure {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin-right: 3rem; // add space between the text and the figure
+        // Alternate solution 
+        //     transform: translateX(-3rem);
+        //     padding-left: 9rem; (in int story component) 
+    }
+
+    &__img {
+        height: 100%;
+    }
 }
