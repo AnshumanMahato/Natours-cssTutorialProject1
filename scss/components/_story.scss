@@ -15,6 +15,7 @@
     &__figure {
         width: 15rem;
         height: 15rem;
+        position: relative;
         float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
@@ -27,5 +28,24 @@
 
     &__img {
         height: 100%;
+    }
+
+    &__caption {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        backface-visibility: hidden;
+        transition: all 0.5s;
+        opacity: 0;
+        transform: translate(-50%,20%);
+    }
+
+    &:hover &__caption {
+        transform: translate(-50%,-50%);
+        opacity: 1;
     }
 }

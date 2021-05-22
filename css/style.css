@@ -402,6 +402,7 @@ body {
 .story__figure {
   width: 15rem;
   height: 15rem;
+  position: relative;
   float: left;
   -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
@@ -410,6 +411,23 @@ body {
 }
 .story__img {
   height: 100%;
+}
+.story__caption {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  backface-visibility: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translate(-50%, 20%);
+}
+.story:hover .story__caption {
+  transform: translate(-50%, -50%);
+  opacity: 1;
 }
 
 .row {
