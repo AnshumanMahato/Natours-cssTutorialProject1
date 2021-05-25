@@ -6,6 +6,7 @@
      &__input {
         border: none;
         border-radius: 2px;
+        color: inherit;
         font-size: $default-font-size;
         font-family: inherit;
         background-color: rgba($color-white, 0.6);
@@ -13,12 +14,23 @@
         width: 90%;
         display: block;
         border-bottom: 3px solid transparent;
-        transition: all 0.2s;
+        transition: all 0.5s;
 
         &:focus {
             outline: none;
-            border-bottom: 3px solid $color-primary;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+
+            &:valid {
+                border-bottom: 3px solid $color-primary;
+            }
+
+            &:invalid {
+                border-bottom: 3px solid $color-secondary-dark;
+            }
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
         }
      }
 
