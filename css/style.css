@@ -431,6 +431,20 @@ body {
 .form__input::-webkit-input-placeholder {
   color: #999;
 }
+.form__label {
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-top: 0.7rem;
+  margin-left: 2rem;
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-4rem);
+}
+
 .story {
   width: 75%;
   margin: 0 auto;
