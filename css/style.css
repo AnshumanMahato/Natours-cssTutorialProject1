@@ -416,7 +416,7 @@ body {
   width: 90%;
   display: block;
   border-bottom: 3px solid transparent;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .form__input:focus {
   outline: none;
