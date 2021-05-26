@@ -448,17 +448,21 @@ body {
   width: 49%;
   display: inline-block;
 }
+.form__radio-input {
+  display: none;
+}
 .form__radio-label {
   font-size: 1.5rem;
-  padding-left: 4rem;
+  padding-left: 3.5rem;
   position: relative;
 }
 .form__radio-btn {
   height: 2.8rem;
-  width: 3.8rem;
+  width: 2.8rem;
   display: inline-block;
   position: absolute;
   left: 0;
+  top: -25%;
   border: 5px solid #55c57a;
   border-radius: 50%;
 }
