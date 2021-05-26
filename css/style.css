@@ -448,9 +448,6 @@ body {
   width: 49%;
   display: inline-block;
 }
-.form__radio-input {
-  display: none;
-}
 .form__radio-label {
   font-size: 1.5rem;
   padding-left: 3.5rem;
@@ -478,6 +475,13 @@ body {
   border-radius: 50%;
   background-color: #55c57a;
   opacity: 0;
+  transition: opacity 0.2s;
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-input:checked + .form__radio-label .form__radio-btn::after {
+  opacity: 1;
 }
 
 .story {
