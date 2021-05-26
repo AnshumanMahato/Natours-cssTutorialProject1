@@ -466,6 +466,19 @@ body {
   border: 5px solid #55c57a;
   border-radius: 50%;
 }
+.form__radio-btn::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #55c57a;
+  opacity: 0;
+}
 
 .story {
   width: 75%;
