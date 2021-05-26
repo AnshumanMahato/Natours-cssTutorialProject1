@@ -48,4 +48,29 @@
         opacity: 0;
         transform: translateY(-4rem);
      }
+
+     &__radio-group {
+        width: 49%;
+        display: inline-block;
+     }
+
+     &__radio-input {
+
+     }
+
+     &__radio-label {
+        font-size: $default-font-size;
+        padding-left: 4rem;
+        position: relative;
+     }
+
+     &__radio-btn {
+        height: 2.8rem;
+        width: 3.8rem;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+     }
 }
