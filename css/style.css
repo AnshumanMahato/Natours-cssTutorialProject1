@@ -624,6 +624,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.44, 0.13, 0.39, 0.98);
 }
 .navigation__nav {
   position: fixed;
@@ -634,6 +635,7 @@ body {
   text-align: center;
   width: 0;
   opacity: 0;
+  transition: all 0.8s cubic-bezier(0.72, -0.4, 0.26, 1.43);
 }
 .navigation__list {
   list-style: none;
@@ -666,7 +668,7 @@ body {
   transform: translateX(1rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(100);
+  transform: scale(80);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;

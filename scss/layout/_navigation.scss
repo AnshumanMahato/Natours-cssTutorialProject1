@@ -24,6 +24,8 @@
         top: 6.5rem;
         right: 6.5rem;
         z-index: 1000;
+
+        transition: transform 0.8s cubic-bezier(.44,.13,.39,.98);
     }
 
     &__nav {
@@ -36,6 +38,7 @@
 
         width: 0;
         opacity: 0;
+        transition: all 0.8s cubic-bezier(.72,-0.4,.26,1.43)
     }
 
     &__list {
@@ -79,7 +82,7 @@
     }
 
     &__checkbox:checked ~ &__background {
-        transform: scale(100);
+        transform: scale(80);
     }
 
     &__checkbox:checked ~ &__nav {
