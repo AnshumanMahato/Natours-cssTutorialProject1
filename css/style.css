@@ -615,6 +615,7 @@ body {
   right: 6rem;
   z-index: 2000;
   text-align: center;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .navigation__background {
   height: 6rem;
@@ -668,13 +669,6 @@ body {
   color: #55c57a;
   transform: translateX(1rem);
 }
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80);
-}
-.navigation__checkbox:checked ~ .navigation__nav {
-  width: 100%;
-  opacity: 1;
-}
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem;
@@ -696,6 +690,13 @@ body {
 }
 .navigation__icon::before {
   top: 0.8rem;
+}
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80);
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1;
 }
 .navigation__button:hover .navigation__icon::after {
   top: -1rem;

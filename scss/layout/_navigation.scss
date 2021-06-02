@@ -14,6 +14,7 @@
         right: 6rem;
         z-index: 2000;
         text-align: center;
+        box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
     }
 
     &__background {
@@ -82,15 +83,6 @@
         
     }
 
-    &__checkbox:checked ~ &__background {
-        transform: scale(80);
-    }
-
-    &__checkbox:checked ~ &__nav {
-        width: 100%;
-        opacity: 1;
-    }
-
     &__icon {
 
         position: relative;
@@ -116,6 +108,17 @@
         
         &::after {top: -0.8rem;}
         &::before {top: 0.8rem;}
+    }
+
+    //FUNCTIONALITY
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        width: 100%;
+        opacity: 1;
     }
 
     &__button:hover &__icon {
