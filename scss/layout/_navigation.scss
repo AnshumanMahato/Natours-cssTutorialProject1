@@ -110,6 +110,12 @@
         &::before {top: 0.8rem;}
     }
 
+    &__button:hover &__icon {
+        
+        &::after {top:-1rem;}
+        &::before {top:1rem;}
+    }
+
     //FUNCTIONALITY
 
     &__checkbox:checked ~ &__background {
@@ -121,9 +127,14 @@
         opacity: 1;
     }
 
-    &__button:hover &__icon {
-        
-        &::after {top:-1rem;}
-        &::before {top:1rem;}
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+
+        &::after,
+        &::before {top: 0;}
+
+        &::after {transform: rotate(135deg);}
+        &::before {transform: rotate(-135deg);}
     }
+
 }
