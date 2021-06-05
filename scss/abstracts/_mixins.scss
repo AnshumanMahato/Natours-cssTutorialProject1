@@ -22,6 +22,12 @@
     900px-1200px    tablet-landscape
     1200px-1800px   desktop(main css)
     1800px+         big desktops
+
+    breakpoints:
+    - phone         600px
+    - tab-port      900px
+    - tab-land      1200px
+    - big-desktop   1800px
 */
 
 @mixin respond($breakpoint) {
