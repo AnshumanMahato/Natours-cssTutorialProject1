@@ -76,7 +76,20 @@ html {
 }
 
 body {
-  padding: 30px;
+  padding: 3rem;
+}
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #777;
 }
 
 .heading-primary {
@@ -92,6 +105,12 @@ body {
   letter-spacing: 3.2rem;
   animation: moveRight 1s ease-out;
 }
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    font-size: 5rem;
+    letter-spacing: 1;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -99,13 +118,10 @@ body {
   letter-spacing: 1.53rem;
   animation: moveLeft 1s ease-out;
 }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.7;
-  color: #777;
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 1rem;
+  }
 }
 
 .heading-secondary {
@@ -118,6 +134,16 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+}
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 }
 .heading-secondary:hover {
   transform: skew(15deg, 2deg) scale(1.1);
