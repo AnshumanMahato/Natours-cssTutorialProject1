@@ -305,10 +305,10 @@ body {
   border-bottom: 1px solid #eee;
 }
 .card__cta {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
   text-align: center;
   width: 90%;
 }
@@ -469,10 +469,10 @@ body {
   border-radius: 50%;
 }
 .form__radio-btn::after {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
   content: "";
   display: block;
   height: 1.3rem;
@@ -502,10 +502,10 @@ body {
   transition: all 0.3s;
 }
 .popup__content {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
   background-color: #fff;
   width: 75%;
   border-radius: 3px;
@@ -667,10 +667,10 @@ body {
   height: 3.2rem;
 }
 .header__text-box {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
   text-align: center;
 }
 
@@ -712,10 +712,10 @@ body {
   transition: all 0.8s cubic-bezier(0.72, -0.4, 0.26, 1.43);
 }
 .navigation__list {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
   list-style: none;
 }
 .navigation__item {
