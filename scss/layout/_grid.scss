@@ -5,6 +5,7 @@
 
     @include respond(tab-port) {
         max-width: 50rem;
+        padding: 0 1%;
     }
 
     &:not(:last-child){
