@@ -331,7 +331,7 @@ body {
   transform: rotateY(0);
 }
 .card__picture {
-  height: 45%;
+  height: 23rem;
   background-size: cover;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -414,6 +414,34 @@ body {
 }
 .card--3 .card__side--back {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+@media (max-width: 56.25em) {
+  .card {
+    height: auto;
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+  }
+  .card__side--back {
+    transform: rotateY(0);
+  }
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+  .card__cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    text-align: center;
+    width: 100%;
+  }
+  .card__price-value {
+    font-size: 6rem;
+  }
 }
 
 .composition {
