@@ -426,25 +426,49 @@ body {
   position: absolute;
   transition: all 0.2s;
   outline-offset: 2rem;
-  z-index: 0;
+  z-index: 10;
+}
+@media (max-width: 56.25em) {
+  .composition__photo {
+    width: 33.3333333%;
+    float: left;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
 }
 .composition__photo--p1 {
   top: -2rem;
   left: 0;
 }
+@media (max-width: 56.25em) {
+  .composition__photo--p1 {
+    top: 0;
+  }
+}
 .composition__photo--p2 {
   top: 2rem;
   right: 0;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p2 {
+    top: 0;
+  }
 }
 .composition__photo--p3 {
   top: 10rem;
   left: 20%;
 }
+@media (max-width: 56.25em) {
+  .composition__photo--p3 {
+    top: 0;
+    left: 0;
+  }
+}
 .composition__photo:hover {
   outline: 1.5rem solid #55c57a;
   transform: scale(1.05) translateY(-2px);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 20;
 }
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
